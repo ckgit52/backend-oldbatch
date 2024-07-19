@@ -1,0 +1,87 @@
+
+
+//schema in mongo db or backend is the is the content of data which will be stored in mongodb
+
+schema example 
+example1: schema of a user
+    username: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+  email: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  }
+
+
+  example2 : schema of a employee
+
+  employee_name: {
+    type: String,
+    required: true,
+  }
+
+  position:{
+    type: String,
+    
+    required: true,
+  }
+  phno:{
+    type:number,
+    unique:true,
+
+    
+  }
+
+
+
+//CRUD OPERATION  
+C=CREATE       .POST(METHOD)
+R=READ         .GET(METHOD)
+U=UPDATE       .PUT(METHOD)
+D=DELETE       .DELETE(METHOD)
+
+
+GET: Used for reading or retrieving data from the server.
+POST: Used for creating new data on the server.
+PUT: Used for updating existing data on the server.
+DELETE: Used for removing data from the server.
+
+
+
+//WHAT IS END POINT 
+localhost:3000
+
+localhost:3000/home
+
+localhost:3000/about
+
+localhost:3000/contacts
+             i)read for all contacts   .GET
+             ii)u can make new contacts  .POST
+             iii)u can update already existing user  .PUT
+             iv)delete the specific user    .DELETE
+
+
+
+at each end point there can be 4 methods GET,POST,PUT,DELETE
+
+//create express prject
+npm init -y
+npm i express
+
+
+
+
+
+            
+ 
+
+
+  
